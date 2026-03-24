@@ -16,15 +16,23 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
 }) => {
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`${className}`}
-      disabled={disabled}
-      style={{padding: '0.5rem 1rem', borderRadius: '0.25rem', backgroundColor: '#FF0000', color: '#ffffff', transition: 'background-color 0.3s' }}
-      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1d4ed8'}
-      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#3b82f6'}
-    >
+      <button
+        type={type}
+        onClick={onClick}
+        style={{
+          padding: '0.5rem 1rem',
+          borderRadius: '0.25rem',
+          backgroundColor: disabled ? '#6ee7b7' : '#22c55e',
+          color: '#fff',
+          border: 'none',
+          cursor: disabled ? 'not-allowed' : 'pointer',
+          transition: 'background-color 0.2s',
+        }}
+        onMouseEnter={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#16a34a'; }}
+        onMouseLeave={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#22c55e'; }}
+        disabled={disabled}
+        className={className}
+      >
       {children}
     </button>
   );
