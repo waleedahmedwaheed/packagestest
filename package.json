@@ -1,6 +1,6 @@
 {
   "name": "@tredit/ui-library-octaloop",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "description": "Reusable React UI Library with themes",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
