@@ -22,14 +22,14 @@ const Button: React.FC<ButtonProps> = ({
         style={{
           padding: '0.5rem 1rem',
           borderRadius: '0.25rem',
-          backgroundColor: disabled ? '#6ee7b7' : '#22c55e',
+          backgroundColor: disabled ? '#fca5a5' : '#ef4444',
           color: '#fff',
           border: 'none',
           cursor: disabled ? 'not-allowed' : 'pointer',
           transition: 'background-color 0.2s',
         }}
-        onMouseEnter={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#16a34a'; }}
-        onMouseLeave={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#22c55e'; }}
+        onMouseEnter={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#b91c1c'; }}
+        onMouseLeave={e => { if (!disabled) e.currentTarget.style.backgroundColor = '#ef4444'; }}
         disabled={disabled}
         className={className}
       >
