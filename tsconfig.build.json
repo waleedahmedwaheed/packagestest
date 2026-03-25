@@ -4,7 +4,10 @@
         "declaration": true,
         "emitDeclarationOnly": true,
         "outDir": "dist",
-        "jsx": "react-jsx"
+        "jsx": "react",
+        "types": [
+            "react"
+        ]
     },
     "include": [
         "src"
