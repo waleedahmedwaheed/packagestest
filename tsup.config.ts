@@ -5,7 +5,8 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: false,
   sourcemap: true,
-  clean: true,
+  clean: false, // Don't clean dist before build
+  noClean: true, // Prevent tsup from deleting dist/styles.css
   external: ['react', 'react-dom'],
   outDir: 'dist'
 });

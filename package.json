@@ -13,7 +13,7 @@
     "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
     "build:js": "tsup",
     "build:types": "tsc --project tsconfig.build.json",
-    "build": "npm run build:css && npm run build:js && npm run build:types",
+    "build": "npm run build:js && npm run build:css && npm run build:types",
     "prepublishOnly": "npm run build",
     "dev": "vite",
     "start": "vite preview"
